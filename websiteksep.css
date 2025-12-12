@@ -1,21 +1,39 @@
 body {
     font-family: 'Poppins';
     background: linear-gradient(180deg, #184E77 0%, #1E6091 52.4%, #168AAD 100%);
+    align-content: center;
 }
+
 
 .t1 {
     font-size: 90px;
     font-weight: 700;
+    background: linear-gradient(90deg, #76C893 8.65%, #B5E48C 52.88%, #D9ED92 96.15%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
 }
 
 .t2 {
     font-size: 36px;
     font-weight: 700;
+    
+    background: linear-gradient(90deg, #76C893 8.65%, #B5E48C 52.88%, #D9ED92 96.15%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
 }
 
 .t3 {
+    background: var(--Test, linear-gradient(90deg, #76C893 8.65%, #B5E48C 52.88%, #D9ED92 96.15%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Montserrat;
     font-size: 36px;
+    font-style: normal;
     font-weight: 400;
+    line-height: normal;
 }
 
 .boxes {
