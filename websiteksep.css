@@ -77,3 +77,16 @@ body {
     box-shadow: 0 10px 20px rgba(0,0,0,0.3); 
 
 }
+.information {
+    background: var(--oohhohooh, linear-gradient(90deg, #10C58B 0%, #00CFF9 66.35%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 8.745px 8.745px rgba(0, 0, 0, 0.25);
+    font-family: Poppins;
+    font-size: 48.1px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    float:left;
+}
