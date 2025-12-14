@@ -1,27 +1,38 @@
 body {
     font-family: 'Poppins';
     background: linear-gradient(180deg, #184E77 0%, #1E6091 52.4%, #168AAD 100%);
-    align-content: center;
+    margin: 0;
+    overflow-x: hidden; 
 }
 
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+}
 
 .t1 {
     font-size: 90px;
     font-weight: 700;
-    background: linear-gradient(90deg, #76C893 8.65%, #B5E48C 52.88%, #D9ED92 96.15%);
+    background: var(--Test, linear-gradient(90deg, #76C893 8.65%, #B5E48C 52.88%, #D9ED92 96.15%));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
+    margin: 0;
 }
 
 .t2 {
     font-size: 36px;
     font-weight: 700;
-    
-    background: linear-gradient(90deg, #76C893 8.65%, #B5E48C 52.88%, #D9ED92 96.15%);
+    background: var(--Test, linear-gradient(90deg, #76C893 8.65%, #B5E48C 52.88%, #D9ED92 96.15%));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
+    margin: 10px 0;
 }
 
 .t3 {
@@ -29,64 +40,137 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: Montserrat;
     font-size: 36px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
 }
+
 
 .boxes {
     display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    gap: 30px; 
+    width: 100%;
+    max-width: 1200px;
+    margin: 100px auto; 
 }
+
 
 .c1, .c2, .c3, .c4 {
     display: flex;
     flex-direction: column;
     width: 250px;
-    height: 1600px;
-    align-items: center;
-    margin-right: 30px;
+    
 }
+
+.c2, .c4 {
+    margin-top: 100px; 
+}
+
+
 .people {
-    width: 250px; 
-    height: 400px;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin-bottom: 30px;
+    transition: transform 0.3s; 
+}
+
+.people:hover {
+    transform: translateY(-10px);
+}
+
+.foto {
+    width: 100%;
+    height: 220px;
+    border-radius: 25px 25px 0 0;
+    background: var(--oohhohooh, linear-gradient(90deg, #10C58B 0%, #00CFF9 66.35%));
+    object-fit: cover;
+}
+
+
+.foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 25px 25px 0 0;
+    display: block; 
+    background-color: transparent;
 }
 
 .tulisan {
-    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    background: radial-gradient(150% 150% at 50% 0%, #1E6091 0%, #168AAD 100%); 
+    border-radius: 0 0 25px 25px;
+    padding: 15px;
+    box-sizing: border-box; 
+    text-align: center;
 }
 
 .nama {
+    color: #FFF;
+    font-size: 30px;
     font-weight: 700;
-    font-style: bold;
-    font-size : 30px;
+    margin: 5px 0;
 }
 
 .fakultas {
-    font-weight: 700;
+    color: #FFF;
     font-size: 25px;
+    font-weight: 700;
+    margin: 0;
 }
 
 .deskripsi {
+    color: #FFF;
     font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: 10px;
 }
 
-.icons:hover { 
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.3); 
-
+/* --- FOOTER ASLI --- */
+.bawah {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 50px;
+    margin-top: 100px;
 }
-.information {
+
+.infotitle1, .infotitle2 {
+    font-size: 48px;
+    font-weight: 700;
     background: var(--oohhohooh, linear-gradient(90deg, #10C58B 0%, #00CFF9 66.35%));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 0 8.745px 8.745px rgba(0, 0, 0, 0.25);
-    font-family: Poppins;
-    font-size: 48.1px;
-    font-style: normal;
+}
+
+.desc, .namakontak, .namakontak2, .tulisancredit {
+    color: #FFFDFD;
     font-weight: 700;
-    line-height: normal;
-    float:left;
+}
+
+
+@media screen and (max-width: 900px) {
+    
+    .t1 { font-size: 50px; }
+    .t2, .t3 { font-size: 20px; padding: 0 10px; }
+    
+    
+    .boxes {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+    
+    
+    .c2, .c4 { margin-top: 0; }
+    
+    .c1, .c2, .c3, .c4 {
+        width: 100%;
+        align-items: center;
+    }
 }
